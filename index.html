@@ -1,7 +1,8 @@
 <!doctype html>
-<html>
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ghassan Portfolio</title>
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
@@ -15,29 +16,23 @@
           <li><a href="#about">About</a></li>
           <li><a href="#skill">Skill</a></li>
           <li><a href="#project">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <!-- Section Home -->
       <section id="home">
         <h2>Welcome to My Portfolio</h2>
-        <img src="assets/img/Max Verstappen.jpg" alt="" />
+        <img src="assets/img/Max Verstappen.jpg" alt="Max Verstappen" />
         <p>
           Saya adalah seorang
           <strong>Full Stack Developer</strong>
           yang menguasai
           <em>HTML, CSS, dan JavaScript.</em>
         </p>
-
-        <h3>Contact Me:</h3>
-        <a href="https://www.instagram.com/ghassan_qill/">Instagram</a>
-        <br />
-        <a href="ghassanqill@gmail.com">gmail</a>
       </section>
 
-      <!-- Section About -->
       <section id="about">
         <h2>About Me:</h2>
         <p>
@@ -56,7 +51,6 @@
         </ul>
       </section>
 
-      <!-- Section Skill -->
       <section id="skill">
         <h2>Skill:</h2>
         <table>
@@ -79,7 +73,6 @@
         </table>
       </section>
 
-      <!-- Section Project -->
       <section id="project">
         <h2>Project:</h2>
         <table>
@@ -105,9 +98,9 @@
           </tr>
         </table>
       </section>
-      <!-- Section Contact -->
+
       <section id="contact">
-        <h2>Hubungi Saya</h2>
+        <h2>Contact</h2>
         <form action="">
           <label for="nama">Nama:</label>
           <input type="text" id="nama" placeholder="Masukan Nama" />
@@ -116,31 +109,56 @@
           <input type="email" id="email" placeholder="Masukan Email" />
 
           <label for="kota">Kota:</label>
-          <select name="" id="kota">
-            <option value="">Bandung</option>
-            <option value="">Jakarta</option>
-            <option value="">Surabaya</option>
+          <select name="kota" id="kota">
+            <option value="">Pilih kota</option>
+            <option value="Bandung">Bandung</option>
+            <option value="Jakarta">Jakarta</option>
+            <option value="Surabaya">Surabaya</option>
+            <option value="Lainnya">Lainnya</option>
           </select>
 
-          <label for="">Jenis Kelamin</label>
-          <input type="radio" name="jk" />Laki-Laki
-          <input type="radio" name="jk" />Perempuan
+          <span class="form-title">Jenis Kelamin</span>
+          <div class="option-group">
+            <label class="option-item">
+              <input type="radio" name="jk" value="Laki-Laki" />
+              <span>Laki-Laki</span>
+            </label>
+            <label class="option-item">
+              <input type="radio" name="jk" value="Perempuan" />
+              <span>Perempuan</span>
+            </label>
+          </div>
 
-          <label for="">keperluan</label>
-          <input type="checkbox" />Buat Website 
-          <input type="checkbox" />Buat Aplikasi 
-          <input type="checkbox" />Konsultasi
-          <input type="checkbox" />Lainnya
+          <span class="form-title">Keperluan</span>
+          <div class="option-group">
+            <label class="option-item">
+              <input type="checkbox" name="keperluan" value="Buat Website" />
+              <span>Buat Website</span>
+            </label>
+            <label class="option-item">
+              <input type="checkbox" name="keperluan" value="Buat Aplikasi" />
+              <span>Buat Aplikasi Aja</span>
+            </label>
+            <label class="option-item">
+              <input type="checkbox" name="keperluan" value="Konsultasi" />
+              <span>Konsultasi</span>
+            </label>
+            <label class="option-item">
+              <input type="checkbox" name="keperluan" value="Lainnya" />
+              <span>Lainnya</span>
+            </label>
+          </div>
 
           <label for="pesan">Pesan</label>
-          <textarea name="" rows="5" id="" placeholder="Tulis Pesan"></textarea>
+          <textarea name="pesan" rows="5" id="pesan" placeholder="Tulis Pesan"></textarea>
 
           <button class="btn" type="submit">Kirim</button>
         </form>
       </section>
     </main>
+
     <footer>
-        <p>&copy; 2026 Ghassan Portfolio | Full Stack Developer</p>
+      <p>&copy; 2026 Ghassan Portfolio | Full Stack Developer</p>
     </footer>
   </body>
 </html>
