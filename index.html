@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
@@ -159,6 +159,208 @@
 
     <footer>
       <p>&copy; 2026 Ghassan Portfolio | Full Stack Developer</p>
+    </footer>
+  </body>
+</html> -->
+
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ghassan Portfolio | Full Stack Developer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="nav-container">
+        <a href="#home" class="logo">Ghassan<span>.dev</span></a>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero / Home Section -->
+      <section id="home" class="hero-section">
+        <div class="avatar-wrapper">
+          <img src="assets/img/Icon logo.jpg" alt="Ghassan Logo" />
+        </div>
+        <h2>Halo, Saya Ghassan Aaqilasyah</h2>
+        <p class="subtitle">
+          Seorang <strong class="highlight">Full Stack Developer</strong> yang berfokus membangun aplikasi web modern yang cepat dan responsif.
+        </p>
+        <div class="cta-buttons">
+          <a href="#project" class="btn btn-primary">Lihat Proyek</a>
+          <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          Saya adalah <span class="highlight">Full Stack Developer</span> yang berdedikasi dan memiliki passion dalam menciptakan pengalaman web dinamis serta solusi teknologis yang efisien.
+        </p>
+
+        <h3 class="sub-title">Hobi & Ketertarikan</h3>
+        <ul class="hobby-list">
+          <li>💻 Programming & Coding</li>
+          <li>📚 Membaca Buku Teknologi</li>
+          <li>🎧 Mendengarkan Musik</li>
+        </ul>
+      </section>
+
+      <!-- Skill Section -->
+      <section id="skill">
+        <h2>Keahlian Utama</h2>
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Teknologi</th>
+                <th>Tingkat Kemampuan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>HTML5</td>
+                <td><span class="badge expert">Expert</span></td>
+              </tr>
+              <tr>
+                <td>CSS3</td>
+                <td><span class="badge expert">Expert</span></td>
+              </tr>
+              <tr>
+                <td>JavaScript (ES6+)</td>
+                <td><span class="badge intermediate">Intermediate</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Project Section -->
+      <section id="project">
+        <h2>Proyek Terbaru</h2>
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Nama Proyek</th>
+                <th>Tahun</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Website Portofolio</td>
+                <td>2025</td>
+                <td><span class="badge success">Selesai</span></td>
+              </tr>
+              <tr>
+                <td>Aplikasi Resep Makanan</td>
+                <td>2026</td>
+                <td><span class="badge success">Selesai</span></td>
+              </tr>
+              <tr>
+                <td>Website Penilaian Siswa</td>
+                <td>2026</td>
+                <td><span class="badge success">Selesai</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2>Hubungi Saya</h2>
+        <form action="#" method="POST" class="contact-form">
+          <div class="form-group">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" placeholder="Masukkan nama Anda" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="nama@email.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="kota">Kota Asal</label>
+            <select name="kota" id="kota">
+              <option value="">-- Pilih Kota --</option>
+              <option value="Bandung">Bandung</option>
+              <option value="Jakarta">Jakarta</option>
+              <option value="Surabaya">Surabaya</option>
+              <option value="Lainnya">Lainnya</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <span class="form-title">Jenis Kelamin</span>
+            <div class="option-group">
+              <label class="option-item">
+                <input type="radio" name="jk" value="Laki-Laki" />
+                <span>Laki-Laki</span>
+              </label>
+              <label class="option-item">
+                <input type="radio" name="jk" value="Perempuan" />
+                <span>Perempuan</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <span class="form-title">Keperluan</span>
+            <div class="option-group">
+              <label class="option-item">
+                <input type="checkbox" name="keperluan" value="Buat Website" />
+                <span>Pembuatan Website</span>
+              </label>
+              <label class="option-item">
+                <input type="checkbox" name="keperluan" value="Buat Aplikasi" />
+                <span>Pembuatan Aplikasi</span>
+              </label>
+              <label class="option-item">
+                <input type="checkbox" name="keperluan" value="Konsultasi" />
+                <span>Konsultasi</span>
+              </label>
+              <label class="option-item">
+                <input type="checkbox" name="keperluan" value="Lainnya" />
+                <span>Lainnya</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="pesan">Pesan / Detail Proyek</label>
+            <textarea name="pesan" rows="5" id="pesan" placeholder="Tuliskan pesan Anda..." required></textarea>
+          </div>
+
+          <button class="btn btn-primary btn-submit" type="submit">Kirim Pesan</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Ghassan Portfolio | Built with Passion & Code</p>
     </footer>
   </body>
 </html>
